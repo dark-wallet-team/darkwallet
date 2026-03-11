@@ -1,86 +1,68 @@
-Darkwallet [![Build Status](https://drone.io/github.com/darkwallet/darkwallet/status.png)](https://drone.io/github.com/darkwallet/darkwallet/latest) [![Code Quality](https://codeclimate.com/github/darkwallet/darkwallet.png)](https://codeclimate.com/github/darkwallet/darkwallet) [![Coverage Status](https://coveralls.io/repos/darkwallet/darkwallet/badge.png?branch=develop)](https://coveralls.io/r/darkwallet/darkwallet?branch=develop)
-===========
+# Darkwallet
 
-We love Bitcoin, and the power it gives for trade and social connections. There is so much untapped power in Bitcoin. You know the saying "we only use 10% of our brain's power"? We probably use less than 1% of what is possible with Bitcoin!
+[![Repository](https://img.shields.io/badge/repo-dark--wallet--team%2Fdarkwallet-181717?logo=github)](https://github.com/dark-wallet-team/darkwallet)
+[![Branch](https://img.shields.io/badge/branch-develop-0A7B83)](https://github.com/dark-wallet-team/darkwallet/tree/develop)
+[![License](https://img.shields.io/badge/license-COPYRIGHT-blue)](./COPYRIGHT)
+[![Status](https://img.shields.io/badge/status-legacy%20codebase-orange)](https://github.com/dark-wallet-team/darkwallet)
 
-We want to start with a simple premise: Bitcoin in your browser. We want a beautiful experience with privacy features built in by default.
+Darkwallet is a privacy-focused Bitcoin wallet codebase maintained in this repository by `dark-wallet-team`. This fork preserves the original project, keeps the source available for research and maintenance, and provides a clean base for documentation and restoration work.
 
-This wallet will serve as a platform or a starting codebase to deliver a high quality Bitcoin that serves the people.
+## Features
 
-Running
------------
+- Browser-extension wallet architecture
+- Client-side key and identity handling
+- Privacy-oriented project design
+- AngularJS-based frontend and background service model
+- Legacy test and build tooling for restoration work
 
-You can load the extension into Chrome by going to _Extensions_, enabling _Development mode_ and clicking the _Load uncompressed extension_ button.
+## Installation
 
+Clone the repository:
 
-Alpha!!!
------------
-We're still in [alpha](http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha) state, that means we're still changing things a lot and it's not safe at all to use the wallet.
-More information at: https://wiki.unsystem.net/index.php/DarkWallet/Alpha
+```bash
+git clone git@github-dark-wallet-team:dark-wallet-team/darkwallet.git
+cd darkwallet
+```
 
-You are *very welcome* to test, just remember the following:
- * Write down your seed and be always ready to use it to restore the identity.
- * First thing you should do is get familiar with creating and restoring an identity.
- * You can do: "create new identity", choose same name as before and restore, this will upgrade your store (you will still need to re add pockets and addresses, contacts etc...)
- * If you notice strange behaviour after upgrading, you should:
-    1. Restart the background process from darkwallet (from "manage extensions")
-    2. If that doesn't work: Clear Darkwallet storage, (from darkwallet settings), restart chromium
+Install development dependencies:
 
-We have been following this procedure since the wallet is under development without problems.
+```bash
+npm install
+npm install -g grunt-cli bower
+bower install
+```
 
-*Remember*: Your funds are safe as long as you *don't lose your seed* to restore later.
+## Usage
 
-Other than that we're not making many guarantees.
+Load the project as an unpacked extension in a Chromium-based browser:
 
+1. Open the browser extensions page.
+2. Enable Developer mode.
+3. Click `Load unpacked`.
+4. Select the repository root.
 
-Development
------------
-You are welcome to participate in the development by contributing or forking the code at:
+Useful development commands:
 
-<https://github.com/darkwallet/darkwallet>
+```bash
+grunt build
+npm test
+```
 
-More info about how to develop on the [HACKING.md](HACKING.md) document.
+Note: this is a legacy extension codebase and may require compatibility fixes for current browser versions.
 
-Other useful documents are: [HD Structure](https://wiki.unsystem.net/en/index.php/DarkWallet/HDWallet), [How to Help](https://wiki.unsystem.net/en/index.php/DarkWallet/HowToHelp) and [Debugging](https://wiki.unsystem.net/en/index.php/DarkWallet/Debug)
+## Project Structure
 
+| Path | Purpose |
+| --- | --- |
+| `src/js/backend` | Background process logic and services |
+| `src/js/frontend` | AngularJS controllers, directives, and UI logic |
+| `src/js/model` | Wallet models and storage-related code |
+| `src/js/util` | Shared utility modules |
+| `src/html` | Extension HTML views, modals, and partials |
+| `src/sass` | Source stylesheets |
+| `test` | Karma-based test suite |
 
-Translations
------------
-Changes to translations as well as new translations can be submitted to [Darkwallet's Transifex page](https://www.transifex.com/projects/p/darkwallet/).
+## License
 
-Translations are periodically pulled from Transifex and merged into the git repository.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next pull from Transifex would automatically overwrite them again.
-
-
-Contact
------------
-
-Use the following resources for communication with "the team"
-
-* [Mailing list](https://lists.unsystem.net/cgi-bin/mailman/listinfo/darkwallet)
-* IRC: #darkwallet (freenode)
-* [Forum](https://forum.unsystem.net/category/projects/darkwallet)
-* [Wiki](https://wiki.unsystem.net/en/index.php/Darkwallet)
-
-
-License
-------------
-See the license [here](COPYRIGHT)
-
-Support Us!
-------------
-
-Support our development efforts by donating to the darkwallet multisig:
-
- 31oSGBBNrpCiENH3XMZpiP6GTC4tad4bMy
-
---
-
-> I went to the store the other day to buy a bolt for our front door, for as I told the storekeeper, the governor was coming here. "Aye," said he, "and the Legislature too." "Then I will take two bolts," said I. He said that there had been a steady demand for bolts and locks of late, for our protectors were coming.
->
-> -- <cite>Henry David Thoreau</cite>
-
-- - -
-
-Darkwallet Team
+License and copyright details are provided in [COPYRIGHT](./COPYRIGHT).
+```
