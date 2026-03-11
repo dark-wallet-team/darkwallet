@@ -1,16 +1,16 @@
 # Darkwallet
 
-[![GitHub](https://img.shields.io/badge/GitHub-dark--wallet--team%2Fdarkwallet-111827?logo=github)](https://github.com/dark-wallet-team/darkwallet)
 [![Release](https://img.shields.io/badge/Release-0.8.0-2563eb)](https://github.com/dark-wallet-team/darkwallet)
 [![License](https://img.shields.io/badge/License-AGPLv3-15803d)](./COPYRIGHT)
-[![Platform](https://img.shields.io/badge/Platform-Browser%20Extension-7c3aed)](https://github.com/dark-wallet-team/darkwallet)
+[![Project](https://img.shields.io/badge/Project-Bitcoin%20Wallet-0f766e)](https://github.com/dark-wallet-team/darkwallet)
+[![Status](https://img.shields.io/badge/Status-Legacy%20Codebase-b45309)](https://github.com/dark-wallet-team/darkwallet)
 [![Stack](https://img.shields.io/badge/Stack-AngularJS%20%7C%20Grunt%20%7C%20Bower-b45309)](https://github.com/dark-wallet-team/darkwallet)
 
 Darkwallet is a privacy-focused Bitcoin wallet codebase maintained by `dark-wallet-team`. This repository preserves the original project and provides a clean base for documentation, compatibility work, and source maintenance.
 
 ## Features
 
-- Browser-extension wallet architecture
+- Legacy Bitcoin wallet architecture
 - Client-side key and identity handling
 - Privacy-oriented project design
 - AngularJS frontend with background service logic
@@ -35,7 +35,7 @@ bower install
 
 ## Usage
 
-Load the project as an unpacked extension in a Chromium-based browser:
+This repository contains a legacy Bitcoin wallet codebase with browser-oriented application structure. For local inspection or restoration work, load it from the repository root and use the build commands below.
 
 1. Open the extensions page.
 2. Enable Developer mode.
@@ -60,7 +60,7 @@ npm test
 Notes:
 
 - On Windows, global packages may need an elevated shell.
-- On modern browsers, this legacy extension may require compatibility fixes before it loads correctly.
+- On modern browsers, this legacy codebase may require compatibility fixes before it loads correctly.
 
 ## Project Structure
 
