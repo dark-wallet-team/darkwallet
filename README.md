@@ -1,6 +1,6 @@
 # Darkwallet
 
-[![Release](https://img.shields.io/badge/Release-0.8.0-2563eb)](https://github.com/dark-wallet-team/darkwallet)
+[![Version](https://img.shields.io/badge/Version-0.8.0-2563eb)](https://github.com/dark-wallet-team/darkwallet)
 [![License](https://img.shields.io/badge/License-AGPLv3-15803d)](./COPYRIGHT)
 [![Project](https://img.shields.io/badge/Project-Bitcoin%20Wallet-0f766e)](https://github.com/dark-wallet-team/darkwallet)
 [![Status](https://img.shields.io/badge/Status-Legacy%20Codebase-b45309)](https://github.com/dark-wallet-team/darkwallet)
